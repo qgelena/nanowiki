@@ -1,0 +1,13 @@
+ {% extends 'base.html' %}
+ {% block body %}
+ <h2>NanoWiki</h2>
+    <p>Welcome to NanoWiki. This is my first project using Flask. You can create, view and edit pages saved as text files.
+    </p>
+    <hr>
+    <h3>The list of articles</h3>
+    <ul id=''>
+        {% for file in all_files %}
+            <li><a href="/{{file}}">{{ file }}</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}

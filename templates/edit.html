@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block body %}
+<h2>{{ name }} - NanoWiki </h2>
+<div>
+    Menu
+    <ul id='pagemenu'>
+        <li><a href="/">Main</a></li>
+        <li><a href="/{{ name }}">Discard</a></li>
+        <li>Delete</li>
+    </ul>
+</div>
+<hr>
+<textarea>{{ text }}</textarea>
+{% endblock %}
