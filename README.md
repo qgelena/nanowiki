@@ -1,5 +1,3 @@
-NanoWiki
-
 Welcome to NanoWiki. 
 
 NanoWiki is a project using Flask. You can create, view and edit pages saved as text files.
